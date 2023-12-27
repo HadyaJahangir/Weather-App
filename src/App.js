@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { useCallback } from 'react';
+import { useState } from 'react';
+import Api from './Api'
 function App() {
+
+  const [bg, setBg] = useState('url("https://images.pexels.com/photos/1209658/pexels-photo-1209658.jpeg?cs=srgb&dl=pexels-vlad-bagacian-1209658.jpg&fm=jpg")');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{
+      backgroundImage : bg,
+      backgroundSize: 'cover',
+      minHeight: '100vh',
+      
+    }}>
+      <Api setBg={setBg}/>
     </div>
   );
 }

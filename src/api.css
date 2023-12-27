@@ -1,0 +1,103 @@
+body{
+    font-family: sans-serif;
+    background-size: cover;
+    margin: 0;
+}
+
+.cloudy-bg{
+    background-image: url('https://i.ytimg.com/vi/ieULeXtyRms/maxresdefault.jpg');
+}
+
+.divPar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    color: white;
+   
+}
+
+.divPar div{
+    text-align: center;
+}
+
+.returns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    color: white;
+    text-align: center;
+    
+    
+}
+
+/* .returns div{
+    background-color: rgb(10, 10, 10,0.5);
+    padding: 20px;
+} */
+
+/* .divPar div{
+    background-color: rgb(91, 5, 5);
+    padding: 20px;
+    opacity: 0.5;
+} */
+
+h1{
+    font-size: 40px;
+    opacity: 1;
+}
+label{
+    padding: 10px;
+}
+
+input{
+    padding: 5px;
+    border: none;
+    height: 20px;
+
+}
+
+button{
+    height: 30px;
+    padding: 5px;
+    border: none;
+    background-color: rgb(17, 15, 15);
+    color: white;
+}
+
+.request{
+    font-size: 30px;
+}
+
+.container {
+    position: relative; /* Create a positioning context for the child elements */
+    width: 100%; /* Ensure the container takes the full width of its parent */
+    height: 100vh; /* Set the container's height to 100% of the viewport height */
+    text-align: center; /* Center the image horizontally */
+  }
+  
+  .loading{
+    position: absolute; /* Position the image relative to the container */
+    top: 50%; /* Move the image 50% down from the top edge of the container */
+    left: 50%; /* Move the image 50% from the left edge of the container */
+    transform: translate(-50%, -50%); /* Center the image both horizontally and vertically */
+    /* Add any specific styling for your image here */
+  }
+
+  .days{
+    margin-right: 20px;
+    color: white;
+    font-size: 15px;
+    display: inline-block;
+    border-radius: 5px;
+    height: 70px;
+    padding: 10px;
+    background-color: rgb(10, 10, 10,0.5)
+
+  }
+
+  .moreinfo{
+    margin-top: 50px;
+    
+  }
